@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Hege Refsnes">
+    <style>
+        div.container{
+            width: 100%;
+            border: 1px solid deeppink;
+        }
+        header, footer{
+            padding: 1em;
+            color: black;
+            background-color: mediumpurple;
+            clear: left;
+            text-align: center;
+            border:1px solid deeppink;
+        }
+        nav {
+            float: left;
+            max-width:160px;
+            margin:0;
+            padding:1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding:0;
+        }
+        nav ul a {
+            text-decoration: none;
+        }
+        article {
+            margin-left:170px;
+            border:1px solid deeppink;
+            padding: 1em;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-<p>All meta information goes to the head, before the body</p>
+<div class="container">
+    <header>
+        <h1>Music style</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Reggae</a></li>
+            <li><a href="#">Rock</a></li>
+            <li><a href="#">Pop</a></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>Reggae</h1>
+        <p>Reggae is a music genre that originated in Jamaica in the late 1960s. The term also denotes the modern popular music of Jamaica and its diaspora.</p>
+        <p>While sometimes used in a broad sense to refer to most types of popular Jamaican dance music, the term reggae more properly denotes a particular music style that was strongly influenced by traditional mento as well as American jazz and rhythm and blues, especially the New Orleans R&B practiced by Fats Domino and Allen Toussaint, and evolved out of the earlier genres ska and rocksteady. Reggae usually relates news, social gossip, and political comment.</p>
+    </article>
+    <footer>Copyright Wikipedia.com</footer>
+</div>
+
 </body>
 </html>
